@@ -16,12 +16,12 @@ h2 {
 	font-family: "Oxygen", sans-serif;
 	color: #FFFFFF;
 	text-align: center;
+	font-weight: normal;
 }
 
 h2.center {
 	color: black;
 	font-family: "Montserrat", sans-serif;
-	font-size: 150%;
 }
 
 h3 {
@@ -29,14 +29,22 @@ h3 {
 	font-size: 140%;
 }
 
+h3.name {
+	color: #FFFFFF;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: lighter;
+}
+
 h4 {
 
 }
 
 p {
-	font-family: "Oxygen", sans-serif;
-	line-height: 140%;
-	text-align: left;
+	font-family: 'Lato', sans-serif;
+	line-height: 200%;
+	font-weight: lighter;
 }
 
 p.center {
@@ -45,6 +53,8 @@ p.center {
 
 p.white {
 	color: #FFFFFF;
+	text-align: center;
+	margin: 0 auto;
 }
 
 p.emphasis {
@@ -109,31 +119,43 @@ header {
 	padding: 2% 0% 10% 0%;
 }
 
+.project-name {
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
 .project {
 	width: 46%;
-	padding: 2%;
+	margin: 2%;
 	float: left;
+	position: relative;
 }
 
 .project-3 {
 	width: 31.33%;
-	padding: 1%;
+	margin: 1%;
 	float: left;
+	position: relative;
+/*	border-radius: 25px;*/
 }
 
 .project-box {
 	width: 48%;
-	padding: 1%;
+	margin: 1%;
 	float: left;
-	margin: 0 auto;
+	position: relative;
 }
 
 .big-project {
 	width: 48%;
-	padding: 1%;
+	margin: 1%;
 	float: left;
-	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 }
 
 .social-bar {
@@ -163,6 +185,11 @@ header {
 	padding-bottom: 25px;
 }
 
+#intro {
+	width: 75%;
+	margin: 0 auto;
+}
+
 #engineering {
 	background-color: #999999;
 }
@@ -180,4 +207,18 @@ header {
 
 img {
 	vertical-align: bottom;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
 }
+
+img.clickable {
+	filter: alpha(opacity=100);
+	-webkit-transition: opacity 0.5s ease;
+}
+
+.clickable:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+
