@@ -15,25 +15,25 @@
 
 <header>
 	<div class="navbar">
-		<h3> <a href="">assistive design</a> </h3>
+		<h3 class="resize-font"><a href="">assistive design</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="">engineering</a> </h3>
+		<h3 class="resize-font"> <a href="">engineering</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="">leadership</a> </h3>
+		<h3 class="resize-font"> <a href="">leadership</a> </h3>
 	</div>
 	<div class="navbar" id="logo">
-		<img src="images/initials-logo.png" align="middle" style="width:75%">
+		<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">
 	</div>
 	<div class="navbar">
-		<h3> <a href="">personal</a> </h3>
+		<h3 class="resize-font"> <a href="">personal</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="CKL_Resume2.pdf">resume</a> </h3>
+		<h3 class="resize-font"> <a href="CKL_Resume2.pdf">resume</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="">contact</a> </h3>
+		<h3 class="resize-font"> <a href="">contact</a> </h3>
 	</div>
 </header>
 
@@ -44,38 +44,35 @@
 		</div>
 		<div id="hello">
 			<div id="personal-pic">
-				<img src="images/self-circle.gif" align="middle" style="width:20%">
+				<img src="images/self-circle.gif" align="middle" style="width:20%; min-width: 100px;">
 			</div>
 			<div id="intro">
-				<h2> I'm Connie, a mechanical engineer at MIT interested in purposeful design, understanding people & education</h2>
+				<h2 class="resize-font"> I'm <b>Connie</b>, a mechanical engineer at MIT interested in <b>purposeful design</b>, <b>understanding people</b> & <b>education</b></h2>
 			</div>
 		</div>
 		<div class = "project-block" id="assistive-design">
-			<h1 class="gray"> Assistive Design </h1>
-			<div class="project-3">
-				<a href="fingerreader.html"><img class="clickable" src="images/fingerreader.jpg" style="width:100%;" display="block">
+			<h1 class="gray resize-font"> Assistive Design </h1>
+			<div class="project-3 project-fingerreader">
 				<div class="project-name"></a>
 					<h3 class="name"> Fingerreader </h3>
 					<p class="white"> a text reading device for the blind </p>
 				</div>
 			</div>
-			<div class="project-3">
-				<img class="clickable" src="images/osl-zipper.jpg" style="width:100%">
+			<div class="project-3 project-zipper">
 				<div class="project-name">
 					<h3 class="name"> Open Style Lab </h3>
 					<p class="white"> accessible clothing for muscular dystrophy </p>
 				</div>
 			</div>
-			<div class="project-3">
-				<img class="clickable" src="images/penpal.jpg" style="width:100%">
+			<div class="project-3 project-penpal">
 				<div class="project-name">
 					<h3 class="name"> PenPal </h3>
 					<p class="white"> a smart tremor-canceling pen </p>
 				</div>
 			</div>
 		</div>
-		<div class = "project-block" id = "engineering">
-			<h1> Engineering </h1>
+<!-- 		<div class = "project-block" id = "engineering">
+			<h1 class="resize-font"> Engineering </h1>
 			<div class="project-box">
 				<div class="project">
 					<img class="clickable" src="images/ndd-logo.jpg" style="width:100%">
@@ -109,19 +106,17 @@
 					<p class="white"> an electric go kart with a dash of love </p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class = "project-block" id = "leadership">
-			<h1 class="gray"> Leadership </h1>
-			<div class="big-project">
-				<a href="dfa.html"> <img class="clickable" src="images/dfa-booth-2.jpg" style="width:100%"></a>
+			<h1 class="gray resize-font"> Leadership </h1>
+			<div class="big-project project-dfa project-circle">
 				<div class="project-name">
 					<h3 class="name"> Design for America </h3>
 					<p class="white"> empowering students to design for social impact </p>
 				</div>
 			</div>
-			<div class="big-project">
-				<a href="swe.html"> <img class="clickable" src="images/swe-cpl.jpg" style="width:100%"></a>
+			<div class="big-project project-swe project-circle">
 				<div class="project-name">
 					<h3 class="name">SWE Outreach </h3>
 					<p class="white"> spreading a love for STEM across the nation </p>
@@ -129,7 +124,7 @@
 			</div>
 		</div>
 		<div class = "project-block" id="personal">
-			<h1> Personal </h1>
+			<h1 class="resize-font"> Personal </h1>
 		</div>
 		<div class = "project-block" id="contact">
 			<p class="center"> Contact me at ckliu@mit.edu </p>
@@ -154,3 +149,30 @@
 
 
 </html>
+<script>
+$(document).ready(function() {
+	var resizeLimit = 800;
+	if ($(window).width() <= resizeLimit) {
+		$('.resize-font').each(function() {
+			$(this).css({"font-size":"0.9em"});
+		});
+	} else if ($(window).width() > resizeLimit) {
+		$('.resize-font').each(function() {
+			$(this).css({"font-size":"1.5em"});
+		});
+	}
+});
+
+$(window).resize(function() {
+	var resizeLimit = 600;
+	if ($(window).width() <= resizeLimit) {
+		$('.resize-font').each(function() {
+			$(this).css({"font-size":"0.9em"});
+		});
+	} else if ($(window).width() > resizeLimit) {
+		$('.resize-font').each(function() {
+			$(this).css({"font-size":"1.5em"});
+		});
+	}
+});
+</script>
