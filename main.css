@@ -1,0 +1,183 @@
+body {
+	margin:0px;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+h1.gray {
+	color: #666666;
+}
+
+h2 {
+	font-family: "Oxygen", sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+h2.center {
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	font-size: 150%;
+}
+
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 140%;
+}
+
+h4 {
+
+}
+
+p {
+	font-family: "Oxygen", sans-serif;
+	line-height: 140%;
+	text-align: left;
+}
+
+p.center {
+	text-align: center;
+}
+
+p.white {
+	color: #FFFFFF;
+}
+
+p.emphasis {
+	color: #3D007A;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+a { 
+	text-decoration: none;
+	color: #FFFFFF;
+	-webkit-transition: color 1.0s ease;
+}
+
+a:hover {
+	color: #33ADFF;
+}
+
+ul { list-style-type: none;
+	text-decoration: none; }
+
+li {
+	color: black;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	font-size: 125%;
+	line-height: 150%;
+	list-style-type: none;
+	display: inline;
+	padding: 15px;
+}
+
+header {
+	background: rgba(0,0,0,0.3);
+	padding:2em;
+	margin: 0 auto;
+	position: absolute;
+	z-index:2;
+	width: 100%;
+	display: table;
+	box-sizing: border-box;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px;
+}
+
+.navbar {
+	width: 14.3%;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.project-block {
+	width: 100%;
+	float: left;
+	margin:0 auto;
+	padding: 2% 0% 10% 0%;
+}
+
+.project {
+	width: 46%;
+	padding: 2%;
+	float: left;
+}
+
+.project-3 {
+	width: 31.33%;
+	padding: 1%;
+	float: left;
+}
+
+.project-box {
+	width: 48%;
+	padding: 1%;
+	float: left;
+	margin: 0 auto;
+}
+
+.big-project {
+	width: 48%;
+	padding: 1%;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.social-bar {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social-icon {
+	width: 23%;
+	padding: 1%;
+	float: left;
+}
+
+#front-pic {
+	margin: 0 auto;
+	text-align: center;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#hello {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #999999;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+#engineering {
+	background-color: #999999;
+}
+
+#personal {
+	background-color: #999999;
+}
+
+.iconbar {
+	width: 175px;
+	margin: 0 auto;
+	text-align: right;
+	padding: 20px;
+}
+
+img {
+	vertical-align: bottom;
+}
