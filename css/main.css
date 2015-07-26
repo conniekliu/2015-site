@@ -169,14 +169,14 @@ header {
 
 .social-bar {
 	width: 50%;
-	text-align: center;
 	margin: 0 auto;
+	padding-top: 5px;
 }
 
 .social-icon {
-	width: 23%;
-	padding: 1%;
+	width: 25%;
 	float: left;
+	margin: 0 auto;
 }
 
 #front-pic {
@@ -205,13 +205,6 @@ header {
 
 #personal {
 	background-color: #999999;
-}
-
-.iconbar {
-	width: 175px;
-	margin: 0 auto;
-	text-align: right;
-	padding: 20px;
 }
 
 img {
