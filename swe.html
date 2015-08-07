@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.orbit.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/orbit.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+
+</head>
+
+<header>
+	<div class="navbar">
+		<h3 class="resize-font"><a href="main.html#assistive-design">assistive design</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#engineering">engineering</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#leadership">leadership</a> </h3>
+	</div>
+	<div class="navbar">
+		<a href="main.html"> <img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;"> </a>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#personal">personal</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="CKL_Resume2.pdf">resume</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#contact">contact</a> </h3>
+	</div>
+</header>
+
+<body>
+	<div class="main-wrapper">
+		<div class="featured-title">
+			<h1>MIT Society of Women Engineers Outreach</h1>
+		</div>
+		<div class="featured-background">
+			<div id="featured"> 
+			     <img class="slider-img" src="images/dfa-booth-2.jpg" >
+			     <img class="slider-img" src="images/dfa-interview.jpg">
+			     <img class="slider-img" src="images/dfa-cpw.jpg">
+			 </div>
+		</div>
+
+		<div class="summary">
+			<div class="logo swe"></div>
+			<div class="problem">
+				<h2><b>The Problem</b></h2>
+				<p class="center">How can we inspire young girls with STEAM education? </p>
+			</div>
+			<div class="problem">
+				<h2><b>The Solution</b></h2>
+				<p class="center"> Provide numerous opportunities that use MIT's resources to provide young girls unique STEM experiences. </p>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#featured').orbit();
+	});
+
+	$(document).ready(function() {
+		// Let's shift the main-wrapper responsive in margin-top
+		var header_size = $('header').offset().top + $('header').outerHeight();
+		$('.main-wrapper').css({'padding-top': header_size});
+		$('.slider-img').each(function(i, obj) {
+			obj.width = $(window).width() * 0.5;
+			obj.height = obj.width * 0.6;
+		});
+	});
+
+    $( window ).resize(function() {
+		$('.slider-img').each(function(i, obj) {
+			obj.width = $(window).width() * 0.5;
+			obj.height = obj.width * 0.6;
+		});
+	});
+
+	// $('#featured').orbit({
+	// 	// animation: 'fade';
+	// 	// pauseOnHover: true;
+	// 	// bullet: true;
+	// 	// bulletThumbs: true;
+	// 	// bulletThumbLocation: '';
+	// });
+
+</script>
+
+
+

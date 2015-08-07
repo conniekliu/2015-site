@@ -11,7 +11,7 @@
 #featured { 
     width: 940px ;
     height: 450px;
-    background: #000 url('orbit/loading.gif') no-repeat center center;
+    /*background: #000 url('orbit/loading.gif') no-repeat center center;*/
     background-size: cover;
     margin: 0 auto;
     overflow: hidden; }
@@ -64,7 +64,7 @@ div.orbit>a {
 /* TIMER
    ================================================== */
 
-div.timer {
+/*div.timer {
     width: 40px;
     height: 40px;
     overflow: hidden;
@@ -73,9 +73,9 @@ div.timer {
     right: 10px;
     opacity: .6;
     cursor: pointer;
-    z-index: 1001; }
+    z-index: 1001; }*/
 
-span.rotator {
+/*span.rotator {
     display: block;
     width: 40px;
     height: 40px;
@@ -119,7 +119,7 @@ span.pause.active {
 
 div.timer:hover span.pause,
 span.pause.active {
-    opacity: 1 }
+    opacity: 1 }*/
 
 
 /* CAPTIONS
@@ -161,11 +161,11 @@ div.slider-nav span {
 
 div.slider-nav span.right {
     background: url(orbit/right-arrow.png);
-    right: 0; }
+    right: -60px; }
 
 div.slider-nav span.left {
     background: url(orbit/left-arrow.png);
-    left: 0; }
+    left: -60px; }
 
 /* BULLET NAV
    ================================================== */
@@ -176,7 +176,7 @@ div.slider-nav span.left {
     list-style: none;
     bottom: -40px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -40px;
     padding: 0; }
 
 .orbit-bullets li {
@@ -186,8 +186,8 @@ div.slider-nav span.left {
     color: #999;
     text-indent: -9999px;
     background: url(orbit/bullets.jpg) no-repeat 4px 0;
-    width: 13px;
-    height: 12px;
+    width: 7px;
+    height: 6px;
     overflow: hidden; }
 
 .orbit-bullets li.active {
@@ -196,7 +196,7 @@ div.slider-nav span.left {
     
 .orbit-bullets li.has-thumb {
     background: none;
-    width: 100px;
+    width: 50px;
     height: 75px; }
 
 .orbit-bullets li.active.has-thumb {
