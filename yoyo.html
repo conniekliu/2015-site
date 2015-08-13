@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/project-responsive.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.orbit.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/orbit.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
+</head>
+
+<div class="dropdown-menu">
+	<h3> <a href="main.html"> home </a> </h3> 
+	<h3> <a href="main.html#assistive-design">assistive design </a></h3>
+	<h3> <a href="main.html#engineering">engineering </a></h3>
+	<h3><a href="main.html#leadership"> leadership </a></h3>
+	<h3><a href="main.html#personal"> personal </a></h3>
+	<h3><a href="CKL_Resume2.pdf"> resume </a> </h3>
+	<h3><a href="main.html#contact"> contact </a></h3>
+</div>
+
+<header>
+	<div class="navbar">
+		<h3 class="resize-font"><a href="main.html#assistive-design">assistive design</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#engineering">engineering</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#leadership">leadership</a> </h3>
+	</div>
+	<div class="navbar">
+		<a href="main.html"> <img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;"> </a>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#personal">personal</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="CKL_Resume2.pdf">resume</a> </h3>
+	</div>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="main.html#contact">contact</a> </h3>
+	</div>
+	<div class= "menu-icon">
+		<img src="images/menu-icon.png" width="100%;" height="100%">
+	</div>
+</header>
+
+<body>
+	<div class="main-wrapper">
+		<div class="featured-title">
+			<h1>Radioactive Yoyos</h1>
+		</div>
+		<div class="featured-background">
+			<div id="featured">
+			     <img class="slider-img" src="images/yoyo-explosion-crop.png">
+			     <img class="slider-img" src="images/yoyo-three.jpg" >
+			     <img class="slider-img" src="images/yoyo-stream.jpg">
+			     <img class="slider-img" src="images/yoyo-glow.jpg">
+			     <img class="slider-img" src="images/yoyo_mold_machining.jpg">
+			 </div>
+		</div>
+
+		<div class="section-bar pad-edit">
+			<div class="margin-edit deets">
+				<h3 class="norm center"> Our <b> <span class='bigger'> yoyos </span></b> were designed with aesthetics and stability in mind. The feature a dual-themed yoyo depicting a radioactive and biohazard sign, with a glow-in-the-dark rim to go with the theme. </h3>
+			</div>
+		</div>
+
+		<div class="deets">
+			<h3 class="norm"> This project was for MIT's Advanced Design and Manufacturing Class (2.008). Each group worked on a team of 6 to design, manufacture, and assemble 50 identical yoyos.
+
+			<h3 class="norm"> We machined the molds for our thermoformed and injection molded parts and optimized the parameters for our final production runs. We took record of part measurements that were critical to assembly during this process to account for production variability. </h3>
+
+			<h3 class="norm"> During assembly, our original idea of spraypainting the thermoformed parts was soon discarded after we realized that the features were too detailed to get a nice overlay of two colors. We then brainstormed new ways to color our parts and settled on using vinyl stickers. Although there were some difficulties with air bubbles in the stickers, they provided the nice color finish we were looking for. </h3>
+		</div>
+
+		<div class="section-bar">
+			<h2 class="larger"><b> Lessons Learned </b> </h2>
+		</div>
+		<div class = "summary lessons">
+			<div class = "lesson">
+				<div class = "lesson-icon wrench"> </div>
+				<p class="center"> Used both Mastercam and Solidworks to design the part molds with tolerances and shrinkage into consideration. </p>
+			</div>
+			<div class = "lesson">
+				<div class = "lesson-icon teamwork"> </div>
+				<p class="center"> Worked on a team of six and learned to resolve design disagreements and schedule conflicts throughout the project. </p>
+			</div>
+			<div class = "lesson">
+				<div class = "lesson-icon puzzle"> </div>
+				<p class="center">  </p>
+			</div>
+			<div class = "lesson">
+				<div class = "lesson-icon time"> </div>
+				<p class="center">  </p>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		menubutton();
+		toppage();
+		sliderimg();
+
+		$('#featured').orbit();
+	});
+
+
+    $( window ).resize(function() {
+    	menubutton();
+    	toppage();
+    	sliderimg();
+
+    	sliderfix();
+	});
+
+</script>
+
+
+

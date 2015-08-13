@@ -2,21 +2,32 @@
 <html>
 
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-
-	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
-
+	<script src="js/project-responsive.js" type="text/javascript"></script>
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/jquery.orbit.min.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="css/orbit.css">
 	<link rel="stylesheet" type="text/css" href="css/project.css">
 
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
 </head>
+
+<div class="dropdown-menu">
+	<h3> <a href="main.html"> home </a> </h3> 
+	<h3> <a href="main.html#assistive-design">assistive design </a></h3>
+	<h3> <a href="main.html#engineering">engineering </a></h3>
+	<h3><a href="main.html#leadership"> leadership </a></h3>
+	<h3><a href="main.html#personal"> personal </a></h3>
+	<h3><a href="CKL_Resume2.pdf"> resume </a> </h3>
+	<h3><a href="main.html#contact"> contact </a></h3>
+</div>
 
 <header>
 	<div class="navbar">
@@ -40,6 +51,9 @@
 	<div class="navbar">
 		<h3 class="resize-font"> <a href="main.html#contact">contact</a> </h3>
 	</div>
+	<div class= "menu-icon">
+		<img src="images/menu-icon.png" width="100%;" height="100%">
+	</div>
 </header>
 
 <body>
@@ -49,23 +63,38 @@
 		</div>
 		<div class="featured-background">
 			<div id="featured"> 
-			     <img class="slider-img" src="images/dfa-booth-2.jpg" >
-			     <img class="slider-img" src="images/dfa-interview.jpg">
-			     <img class="slider-img" src="images/dfa-cpw.jpg">
+			     <img class="slider-img" src="images/swe-cpl.jpg" >
+			     <img class="slider-img" src="images/designsquad-logo.png">
+			     <img class="slider-img" src="images/cc-logo.png">
 			 </div>
 		</div>
 
-		<div class="summary">
-			<div class="logo swe"></div>
-			<div class="problem">
-				<h2><b>The Problem</b></h2>
-				<p class="center">How can we inspire young girls with STEAM education? </p>
-			</div>
-			<div class="problem">
-				<h2><b>The Solution</b></h2>
-				<p class="center"> Provide numerous opportunities that use MIT's resources to provide young girls unique STEM experiences. </p>
+		<div class="section-bar probz">
+			<div class="summary">
+				<div class="logo swe"></div>
+				<div class="problem">
+					<h2><b>The Problem</b></h2>
+					<h3 class="light center">How can we inspire young girls with STEAM education? </h3>
+				</div>
+				<div class="problem">
+					<h2><b>The Solution</b></h2>
+					<h3 class="light center"> Provide numerous opportunities for young girls to have unique STEM experiences. </h3>
+				</div>
 			</div>
 		</div>
+
+		<div class="deets">
+			<h3 class="norm"> <b> <span class='bigger'> MIT SWE Outreach </span></b> is dedicated to inspiring young girls to be interested in STEM. By running unique programs to target all K-12 age groups, MIT SWE . Serving over 2000 young girls from all over the globe every year, MIT SWE strives to help repair the leaky STEM pipeline and encourage more girls to stay in STEM. </h3>
+		</div>
+
+		<div class="section-bar">
+			<h2 class="larger"><b> My Role </b> </h2>
+		</div>
+
+		<div class="deets">
+			<h3 class="norm"> I served as Vice President of Outreach and various outreach chairs. During this time, I started seven new outreach programs. From connecting collegebound high school girls worldwide to MIT mentors through College Connection to empowering underprivileged middle school students with the creativity of design thinking through Design Squad, my programs targeted students from all backgrounds to be inspired by STEM. </h3>
+		</div>
+
 
 	</div>
 </body>
@@ -73,36 +102,24 @@
 </html>
 
 <script type="text/javascript">
-	$(window).load(function() {
+
+	$(document).ready(function() {
+		menubutton();
+		toppage();
+		sliderimg();
+
 		$('#featured').orbit();
 	});
 
-	$(document).ready(function() {
-		// Let's shift the main-wrapper responsive in margin-top
-		var header_size = $('header').offset().top + $('header').outerHeight();
-		$('.main-wrapper').css({'padding-top': header_size});
-		$('.slider-img').each(function(i, obj) {
-			obj.width = $(window).width() * 0.5;
-			obj.height = obj.width * 0.6;
-		});
-	});
 
     $( window ).resize(function() {
-		$('.slider-img').each(function(i, obj) {
-			obj.width = $(window).width() * 0.5;
-			obj.height = obj.width * 0.6;
-		});
+    	menubutton();
+    	toppage();
+    	sliderimg();
+
+    	sliderfix();
 	});
 
-	// $('#featured').orbit({
-	// 	// animation: 'fade';
-	// 	// pauseOnHover: true;
-	// 	// bullet: true;
-	// 	// bulletThumbs: true;
-	// 	// bulletThumbLocation: '';
-	// });
-
 </script>
-
 
 
